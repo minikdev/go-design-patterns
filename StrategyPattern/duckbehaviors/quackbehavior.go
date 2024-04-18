@@ -1,5 +1,5 @@
 package duckbehaviors
 
-type QuackBehavior interface {
+type IQuackBehavior interface {
 	Quack()
 }

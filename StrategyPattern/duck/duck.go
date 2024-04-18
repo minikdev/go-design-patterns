@@ -5,8 +5,8 @@ import (
 )
 
 type Duck struct {
-	quackBehavior duckbehaviors.QuackBehavior
-	flyBehavior   duckbehaviors.FlyBehavior
+	quackBehavior duckbehaviors.IQuackBehavior
+	flyBehavior   duckbehaviors.IFlyBehavior
 }
 
 func (d *Duck) PerformQuack() {
@@ -21,9 +21,9 @@ func (d *Duck) Swim() {
 func (d *Duck) Display() {
 	println("I'm a duck!")
 }
-func (d *Duck) SetQuackBehavior(quackBehavior duckbehaviors.QuackBehavior) {
+func (d *Duck) SetQuackBehavior(quackBehavior duckbehaviors.IQuackBehavior) {
 	d.quackBehavior = quackBehavior
 }
-func (d *Duck) SetFlyBehavior(flyBehavior duckbehaviors.FlyBehavior) {
+func (d *Duck) SetFlyBehavior(flyBehavior duckbehaviors.IFlyBehavior) {
 	d.flyBehavior = flyBehavior
 }

@@ -1,5 +1,5 @@
 package duckbehaviors
 
-type FlyBehavior interface {
+type IFlyBehavior interface {
 	Fly()
 }
